@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As zidea - Central de Ideias Criativas</title>
+    <style>
+        /* Estilo geral */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background: #4834d4;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            width: 100%;
+            background: #341f97;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f1f1f1;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.2s ease;
+        }
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px 0 0 8px;
+            outline: none;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 12px 20px;
+            border: none;
+            background: #4834d4;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .search-bar button:hover {
+            background: #341f97;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #f1f2f6;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #4834d4;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .options {
+            display: none;
+            margin-top: 15px;
+            text-align: left;
+        }
+        .option-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .option-item img {
+            max-width: 40px;
+            margin-right: 10px;
+        }
+        .option-item h4 {
+            font-size: 16px;
+        }
+        .card button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #4834d4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .card button:hover {
+            background: #341f97;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #4834d4;
+            color: white;
+            border-radius: 8px;
+            width: 100%;
+        }
+        /* Animação */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>As zidea- Central de Ideias Criativas</header>
+    
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#ideas">Ideias</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#playlists">Playlists</a>
+        <a href="#recipes">Receitas</a>
+    </nav>
+    
+    <div class="container" id="home">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Pesquise ideias incríveis...">
+            <button onclick="searchIdeas()">Buscar</button>
+        </div>
+        <div id="results" class="grid">
+            <!-- Ideias aparecerão aqui -->
+        </div>
+    </div>
+
+    <div class="container" id="ideas">
+        <h2>Mais Ideias Criativas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="praia.jpg">
+                <h3>Viagem dos Sonhos</h3>
+                <p>Planeje sua viagem dos sonhos com dicas de destinos incríveis.</p>
+                <button onclick="toggleOptions(this)">Veja Opções</button>
+                <div class="options">
+                    <div class="option-item">
+                        <img src="https://via.placeholder.com/100x100" alt="Paris">
+                        <h4>Paris</h4>
+                    </div>
+                    <div class="option-item">
+                        <img src="https://via.placeholder.com/100x100" alt="Tokyo">
+                        <h4>Tóquio</h4>
+                    </div>
+                    <div class="option-item">
+                        <img src="https://via.placeholder.com/100x100" alt="NYC">
+                        <h4>Nova York</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Mais cards podem ser adicionados aqui -->
+        </div>
+    </div>
+
+    <div class="container" id="videos">
+        <h2>Vídeos Criativos</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="playlist.webp" alt="Video 1">
+                <h3>Como Criar uma Playlist</h3>
+                <p>Aprenda a criar playlists perfeitas para qualquer ocasião.</p>
+                <button>Assistir Agora</button>
+            </div>
+            <!-- Mais vídeos podem ser adicionados aqui --> 
+        </div>
+    </div>
+
+    <div class="container" id="playlists">
+        <h2>Playlists Inspiradoras</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="estudar.jpg" alt="Playlist 1">
+                <h3>Playlist para Estudar</h3>
+                <p>Uma seleção de músicas suaves para focar nos estudos.</p>
+                <button>Ouvir Agora</button>
+            </div>
+            <!-- Mais playlists podem ser adicionadas aqui -->
+        </div>
+    </div>
+
+    <div class="container" id="recipes">
+        <h2>Receitas Criativas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="browlie.avif" alt="Receita 1">
+                <h3>Brownie de Chocolate</h3>
+                <p>Uma receita deliciosa e fácil para adoçar seu dia.</p>
+                <button>Ver Receita</button>
+            </div>
+            <!-- Mais receitas podem ser adicionadas aqui -->
+        </div>
+    </div>
+
+    <footer>
+        2024 meu site personalizado | Todos os direitos reservados As zidea - Central de Ideias Criativas
+    </footer>
+</body>
+</html>
