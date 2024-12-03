@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitologia Grega</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Para os ícones de redes sociais -->
+    <style>
+        /* Configurações Globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, p {
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #f39c12, #e74c3c);
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4em;
+            text-transform: uppercase;
+            font-family: 'Georgia', serif;
+            color: white;
+        }
+
+        header p {
+            font-size: 1.6em;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Navegação (Menu) */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            font-size: 1.2em;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 0 20px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f39c12;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Seção Principal */
+        section {
+            flex: 1;
+            padding: 50px 20px;
+            background-color: #ecf0f1;
+        }
+
+        .section-header {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 40px;
+            color: #e74c3c;
+            font-family: 'Georgia', serif;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .text-content {
+            width: 100%;
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            color: #fff;
+            font-size: 1.2em;
+            line-height: 1.6;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .text-content:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        /* Ícones das redes sociais */
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f39c12;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content img {
+                width: 80%;
+            }
+
+            .text-content {
+                padding: 20px;
+                font-size: 1em;
+            }
+        }
+        .img{
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Mitologia Grega</h1>
+        <p>Os Deuses e Heróis da Antiga Grécia</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#zeus">Zeus</a>
+        <a href="#afrodite">Afrodite</a>
+        <a href="#hercules">Hércules</a>
+        <a href="#medusa">Medusa</a>
+    </nav>
+
+    <!-- Conteúdo -->
+    <section>
+        <div class="section-header">A Mitologia Grega e Seus Deuses</div>
+
+        <!-- Zeus -->
+        <div id="zeus" class="content">
+            <div class="text-content">
+                <h2>Zeus - O Rei dos Deuses</h2>
+                <p>
+                    Zeus é o deus supremo do Olimpo, governando os céus e o trovão. Filho de Cronos e Reia, ele libertou seus irmãos e irmãs do ventre de seu pai, após este engolir todos os seus filhos. Zeus é símbolo de poder, autoridade e justiça. Seu raio é sua arma principal, e ele é frequentemente retratado como o líder dos deuses, governando o destino da humanidade e dos outros deuses.
+                </p>
+            </div>
+            <img class="img" src="zeus.png" alt="Zeus">
+        </div>
+
+        <!-- Afrodite -->
+        <div id="afrodite" class="content">
+            <div class="text-content">
+                <h2>Afrodite - Deusa do Amor</h2>
+                <p>
+                    Afrodite é a deusa do amor, da beleza e da fertilidade. Nascida da espuma do mar, ela foi uma das divindades mais adoradas na Grécia Antiga. Ela simboliza o poder do amor e da sedução, sendo responsável por unir os corações dos mortais e imortais. Afrodite também representa a paixão, o desejo e a harmonia nas relações humanas.
+                </p>
+            </div>
+            <img class="img" src="afrodite.png" alt="Afrodite">
+        </div>
+
+        <!-- Hércules -->
+        <div id="hercules" class="content">
+            <div class="text-content">
+                <h2>Hércules - O Herói Imortal</h2>
+                <p>
+                    Hércules é o maior herói da mitologia grega, conhecido por sua força incomum e coragem diante dos desafios. Filho de Zeus e da mortal Alcmena, Hércules passou por uma série de doze trabalhos impossíveis para se redimir dos erros cometidos. Ele representa a virtude, a superação de obstáculos e a busca pela imortalidade através de feitos heroicos.
+                </p>
+            </div>
+            <img class="img" src="hercules.png" alt="Hércules">
+        </div>
+
+        <!-- Medusa -->
+        <div id="medusa" class="content">
+            <div class="text-content">
+                <h2>Medusa - A Górgona</h2>
+                <p>
+                    Medusa, uma das três Górgonas, era uma bela mulher que foi transformada em uma criatura monstruosa com 
+                    serpentes
+                    <p>
+                        Medusa, uma das três Górgonas, era uma bela mulher que foi transformada em uma criatura monstruosa com serpentes no lugar de cabelo. Ela foi punida por Atena, após ser desonrada por Poseidon em seu templo. Medusa possuía o poder de transformar em pedra qualquer pessoa que a olhasse diretamente nos olhos. O herói Perseu, armado com um escudo polido e uma espada afiada, conseguiu derrotá-la e cortar sua cabeça, que mais tarde foi usada como uma arma.
+                    </p>
+                </div>
+                <img class="img" src="medusa.png" alt="Medusa">
+            </div>
+        </section>
+    
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2024 Mitologia Grega | Todos os direitos reservados</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </body>
+    </html>

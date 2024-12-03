@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitologia Nórdica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Para os ícones de redes sociais -->
+    <style>
+        /* Configurações Globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #003366, #1a1a1a);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, p {
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f1c40f;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid #f1c40f;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-transform: uppercase;
+            font-family: 'Georgia', serif;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Navegação (Menu) */
+        nav {
+            background-color: #003366;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 20px;
+            font-size: 1.2em;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f1c40f;
+            color: #003366;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Seção principal */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .section-header {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .text-content {
+            width: 100%;
+            max-width: 600px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-content h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Ícones das redes sociais */
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .content img {
+                width: 100%;
+            }
+
+            .text-content {
+                padding: 20px;
+                font-size: 1em;
+            }
+        }
+        .img{
+            width: 600px;
+            height: 400px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Mitologia Nórdica</h1>
+        <p>Deuses e Heróis do Mundo Viking</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#deuses">Deuses</a>
+        <a href="#herois">Heróis</a>
+        <a href="#criaturas">Criaturas</a>
+    </nav>
+
+    <!-- Conteúdo -->
+    <section>
+        <div class="section-header" id="deuses">Os Deuses Nórdicos</div>
+        <div class="content">
+            <!-- Texto explicativo -->
+            <div class="text-content">
+                <h2>Odín</h2>
+                <p>
+                    Odín é o deus supremo da mitologia nórdica, governante de Asgard, associado à sabedoria, guerra e morte. Ele sacrificou um de seus olhos em busca de conhecimento e também foi quem criou o mundo a partir do corpo do gigante Ymir. Odín é representado com uma longa barba, usando um manto e um chapéu, e montando seu cavalo de oito patas, Sleipnir.
+                </p>
+            </div>
+            <!-- Imagem sobre Odín -->
+            <img class="img" src="odin.png" alt="Odín">
+        </div>
+
+        <div class="content">
+            <!-- Texto sobre Thor -->
+            <div class="text-content">
+                <h2>Thor</h2>
+                <p>
+                    Thor é o deus do trovão e um dos mais poderosos deuses nórdicos. Filho de Odín, ele é conhecido por sua força descomunal e por brandir o martelo Mjöllnir, capaz de causar destruição. Thor é o protetor dos humanos, sempre lutando contra os gigantes do gelo e outros inimigos de Asgard.
+                </p>
+            </div>
+            <!-- Imagem sobre Thor -->
+            <img class="img" src="thor.png" alt="Thor">
+        </div>
+
+        <div class="content">
+            <!-- Texto sobre Loki -->
+            <div class="text-content">
+                <h2>Loki</h2>
+                <p>
+                    Loki, o deus da trapaça, é uma figura complexa na mitologia nórdica. Embora seja considerado um deus de Asgard, ele não é confiável e está frequentemente em conflito com os outros deuses. Loki é o responsável pela morte de Balder e também pela libertação de Fenrir, o lobo que engolirá Odín durante o Ragnarök.
+                </p>
+            </div>
+            <!-- Imagem sobre Loki -->
+            <img class="img" src="loki.png" alt="Loki">
+        </div>
+
+        <div class="content" id="criaturas">
+            <!-- Texto sobre criaturas mitológicas -->
+            <div class="text-content">
+                <h2>Fenrir</h2>
+                <p>
+            Fenrir é o enorme lobo filho de Loki e da gigante Angrboda. De acordo com a mitologia, Fenrir é destinado a matar Odin durante o Ragnarök, o apocalipse nórdico. Para evitar essa ameaça, os deuses o prenderam com uma corrente mágica chamada Gleipnir, feita de seis elementos impossíveis. Fenrir simboliza o poder incontrolável e o destino trágico que os deuses não conseguem evitar.
+                </p>
+            </div>
+            <!-- Imagem sobre Fenrir -->
+            <img class="img" src="fenrir.png" alt="Fenrir">
+        </div>
+
+        <div class="content">
+            <!-- Texto sobre Jörmungandr -->
+            <div class="text-content">
+                <h2>Jörmungandr</h2>
+                <p>
+                    Jörmungandr, também conhecido como a Serpente de Midgard, é outro filho de Loki. De acordo com a mitologia, ele foi lançado no oceano por Odin, onde cresceu até alcançar o tamanho suficiente para circundar o mundo, mordendo sua própria cauda. Jörmungandr está destinado a enfrentar Thor durante o Ragnarök, onde ambos morrerão em um confronto final.
+                </p>
+            </div>
+            <!-- Imagem sobre Jörmungandr -->
+            <img class="img" src="cobra.png" alt="Jörmungandr">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Mitologia Nórdica | Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

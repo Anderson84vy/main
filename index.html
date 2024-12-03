@@ -1,28 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mundos de Fé e Mitos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Para os ícones de redes sociais -->
     <style>
-        h1{
-            color: brown;
-            background-color: cyan;
-        }
-        body{
-            background-color: darkblue;
+        /* Configurações Globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a52a3, #5c3c92);
+            color: #f5e7e7;
         }
 
-        img{
-            height: 800px;
-            width:650px
+        h1, h2 {
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4b3f72;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #4b3f72;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid #6a52a3;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Navegação (Menu) */
+        nav {
+            background-color: #6a52a3;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            margin: 0 20px;
+            font-size: 1.2em;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #6a52a3;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Botões para as páginas das religiões */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: #fff;
+            color: #6a52a3;
+            padding: 20px;
+            margin: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #4b3f72;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Ícones das redes sociais */
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #6a52a3;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button {
+                width: 100%;
+                margin: 10px 0;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-    
-    <h1>Ford Landau V8 5.0 1979</h1>
-    <img src="Marajó 2 encontro antigos do val.jpg" alt="">
-    <img src="Chevette.jpg" alt="">
+    <!-- Cabeçalho -->
+    <header>
+
+        <h1>Mundos de Fé e Mitos</h1>
+        <p>Explore religiões e mitos de diferentes culturas ao redor do mundo</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#cristianismo">Cristianismo</a>
+        <a href="#catolicismo">Catolicismo</a>
+        <a href="#islamismo">Islamismo</a>
+        <a href="#hinduismo">Hinduísmo</a>
+        <a href="#matriz-africana">Matriz Africana</a>
+        <a href="#mitologia-grega">Mitologia Grega</a>
+        <a href="#mitologia-nordica">Mitologia Nórdica</a>
+    </nav>
+
+    <!-- Botões de Religiões e Mitologias -->
+    <section>
+        <div class="button-container">
+            <a href="cristianismo.html" class="button">Cristianismo</a>
+            <a href="catolicismo.html" class="button">Catolicismo</a>
+            <a href="islamismo.html" class="button">Islamismo</a>
+            <a href="hinduismo.html" class="button">Hinduísmo</a>
+            <a href="matriz-africana.html" class="button">Matriz Africana</a>
+            <a href="mitologia-grega.html" class="button">Mitologia Grega</a>
+            <a href="mitologia-nordica.html" class="button">Mitologia Nórdica</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Mundos de Fé e Mitos. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="fab fa-facebook"></a>
+            <a href="#" target="_blank" class="fab fa-twitter"></a>
+            <a href="#" target="_blank" class="fab fa-instagram"></a>
+            <a href="#" target="_blank" class="fab fa-youtube"></a>
+        </div>
+    </footer>
 </body>
 </html>
